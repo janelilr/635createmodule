@@ -1,0 +1,16 @@
+<?php
+
+function module1_menu() {
+    $items = array();
+    $items['food']= array(
+    'title' =>'All about food!',
+    'page callback'=> 'module1_food',
+    'access callback' => true,
+);
+    return $items;
+}
+
+function module1_food(){
+    return t("Tiramisu halvah jelly marshmallow cheesecake gummies sesame snaps apple pie lemon drops. Lollipop topping jelly beans tart jelly beans. Danish cupcake candy fruitcake ice cream apple pie tart. Oat cake gummi bears bear claw oat cake jujubes sugar plum dragée.");
+
+}

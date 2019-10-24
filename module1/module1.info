@@ -1,0 +1,4 @@
+name= module1
+description= "Creating the first module for this homework"
+core= 7.x
+package=635

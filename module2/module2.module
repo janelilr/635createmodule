@@ -1,0 +1,18 @@
+<?php
+
+function module2_menu(){
+    $items = array();
+    $items['cupcake']= array(
+        'title' => 'Cupcakes',
+        'page callback' => 'module2_cupcake',
+        'access callback' => true,
+
+    );
+    return $items;
+}
+
+
+function module2_cupcake(){
+    return t("
+Gingerbread chocolate cake chocolate bar pastry dessert muffin. Donut powder marzipan liquorice cake cheesecake. Apple pie jelly beans caramels. Cupcake jujubes ice cream chupa chups tart bear claw candy jelly-o chocolate cake.");
+}
